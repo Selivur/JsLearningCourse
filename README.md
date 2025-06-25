@@ -2,14 +2,14 @@
 
 ## Опис
 
-Цей проект — веб-застосунок для електронного курсу "Вступ до програмування" (на основі JavaScript). Система дозволяє студентам проходити інтерактивні уроки, виконувати тести, а викладачам — керувати навчальними матеріалами, тестами та користувачами. Проект складається з фронтенду на [Next.js](https://nextjs.org/) та бекенду на [.NET 8 Web API](https://dotnet.microsoft.com/).
+Цей проект — веб-застосунок для електронного курсу "Вступ до програмування" (на основі JavaScript). Система дозволяє студентам проходити інтерактивні уроки, виконувати тести, а викладачам — керувати навчальними матеріалами, тестами та користувачами. Проект складається з фронтенду на [Next.js](https://nextjs.org/) та бекенду на [ASP.NET Core Web API](https://learn.microsoft.com/aspnet/core/web-api/?view=aspnetcore-8.0).
 
 ---
 
 ## Технології
 
 - **Frontend:** Next.js, React, TypeScript, TailwindCSS
-- **Backend:** .NET 8 Web API (C#)
+- **Backend:** ASP.NET Core Web API (.NET 8, C#)
 - **Database:** Entity Framework Core, SQL (MSSQL)
 - **Docker** (лише для бекенду)
 - **JWT** для аутентифікації
@@ -34,7 +34,7 @@
 
 ```
 project/
-├── API/           # .NET Web API (Controllers, Services, Models)
+├── API/           # ASP.NET Core Web API (Controllers, Services, Models)
 ├── Database/      # Моделі, міграції, репозиторії для роботи з БД
 ├── Frontend/      # Next.js фронтенд (React, сторінки, компоненти)
 ├── docker-compose.yml  # Docker-оркестрація для бекенду
@@ -74,7 +74,7 @@ project/
    ```bash
    dotnet run
    ```
-4. API буде доступний на порту, вказаному у `API/appsettings.json` (за замовчуванням 5000 або 8080)
+4. API буде доступний на порту, вказаному у `API/appsettings.json` 
 
 ### Frontend (Next.js) локально
 1. Перейдіть у папку `Frontend/`
